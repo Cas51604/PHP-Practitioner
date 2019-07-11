@@ -8,7 +8,7 @@
 </h2>
 
 <ul>
-	<li><B>Completed</B> EP 15: High Your Secret Passwords</li>
+	<li><B>Completed</B> EP 15: Hide Your Secret Passwords</li>
 	<li><B>Completed</B> EP 14: PDO Refactoring and Collaborators</li>
 	<li><B>Completed</B> EP 13: Intro to PDO</li>
 	<li><B>Completed</B> EP 12: Classes 101</li>

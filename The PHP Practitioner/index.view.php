@@ -7,8 +7,13 @@
 
     <title>Document</title>
 </head>
-
 <body>
+    <nav>
+        <ul>
+            <li><a href="/about.php">About Page</li>
+            <li><a href="/contact.php">Contact Page</li>
+        </ul>
+    </nav>
     <ul>
         <?php foreach ($tasks as $task) : ?>
             <li>
@@ -16,7 +21,7 @@
                     <b><?= $task->description; ?></b>
                 <?php else: ?>
                     <?= $task->description; ?>
-                <?php endif; ?>
+                <?php endif; ?>ontact
             </li>
         <?php endforeach; ?>
     </ul>

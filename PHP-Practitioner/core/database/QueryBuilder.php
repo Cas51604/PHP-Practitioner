@@ -1,23 +1,21 @@
 <?php
 
 class QueryBuilder
-
 {
-	protected $pdo;
+    protected $pdo;
 
-	public function __construct($pdo)
+    public function __construct($pdo)
+    {
+        $this->pdo = $pdo;
+    }
 
-	{
-		$this->pdo = $pdo;
-	}
 
+    public function selectAll($table)
+    {
+        $statement = $this->pdo->prepare("select * from {$table}");
 
-	public function selectAll($table)
-	{
-		$statement = $this->pdo->prepare("select * from {$table}");
+        $statement->execute();
 
-		$statement->execute();
-
-		return $statement->fetchAll(PDO::FETCH_CLASS);
-	}
+        return $statement->fetchAll(PDO::FETCH_CLASS);
+    }
 }

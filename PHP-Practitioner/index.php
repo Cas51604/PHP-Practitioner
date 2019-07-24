@@ -1,8 +1,6 @@
 <?php
 
-equire 'core/bootstrap.php';
+require 'core/bootstrap.php';
 
-die(var_dump($app));
-
-$router = Router::load('routes.php');
-    ->direct(Request::$uri);
+require Router::load('routes.php')
+    ->direct(Request::uri());

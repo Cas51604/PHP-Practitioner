@@ -4,6 +4,7 @@ class Request
 {
     public static function uri()
     {
-        return trim($_SERVER['REQUEST_URI'], '/');
+        $uri = '/PHP-Practice';
+        $_SERVER['REQUEST_URI'] = substr($_SERVER['REQUEST_URI'], (strlen($uri)));
     }
 }
